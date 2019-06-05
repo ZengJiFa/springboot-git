@@ -2,6 +2,7 @@ package com.qianfeng.springbootgit.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author ZengJiFA
@@ -10,5 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("my")
 public class MyController {
+
+    @RequestMapping("hello")
+    @ResponseBody
+    public  String hello(){
+        return  "hello";
+    }
 
 }
