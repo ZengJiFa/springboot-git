@@ -16,6 +16,7 @@ public class MyController {
     @ResponseBody
     public  String hello(){
          System.out.println("dddd???dd");
+        System.out.println("dev提交");
         return  "hello";
     }
 
